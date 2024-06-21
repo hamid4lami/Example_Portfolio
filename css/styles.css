@@ -96,6 +96,17 @@ img{
     height: auto;
 }
 
+/* THEME STYLES  */
+.change_theme{
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change_theme:hover{
+    color: var(--first-colour);
+}
+
 /* REUSABLE CSS CLASSES */
 .container{
     max-width: 968px;
