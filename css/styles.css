@@ -198,7 +198,107 @@ img{
 
 /* CHANGE BACKGROUND HEADER  */
 .scroll_header{
-    box-shadow: 0 4px 4px hsla(0,0%, 4%, .3);
+    box-shadow: 0 4px 4px hsla(0%,0%, 4%, .3);
 }
 
 /* HOME SECTION STYLES */
+.home_container{
+    position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem;
+}
+
+.home_data{
+    text-align: center;
+}
+
+.home_greeting,
+.home_education{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home_greeting{
+    color: var(--title-colour);
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.home_education{
+    color: var(--text-colour);
+    margin-bottom: 2.5rem;
+}
+
+.home_name{
+    font-size: var(--biggest-font-size);
+}
+
+.home_image{
+    width: 160px;
+}
+
+.home_handle{
+    justify-self: center;
+    width: 190px;
+    height: 293px;
+    background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 2));
+    border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home_social,
+.home_scroll{
+    position: absolute;
+}
+
+.home_social_link{
+    width: max-content;
+    background-color: var(--container-colour);
+    color: var(--first-colour);
+    padding: .25rem;
+    display: flex;
+    border-radius: .25rem;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.home_social_link:hover{
+    background-color: var(--first-colour);
+    color: #fff;
+}
+
+.home_social::after{
+    content: '';
+    width: 32px;
+    height: 2px;
+    background-color: var(--first-colour);
+    transform: rotate(90deg) translate(16px, 2px);
+}
+
+.home_scroll{
+    color: var(--first-colour);
+    right: -1.5rem;
+    bottom: 4rem;
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+}
+
+.home_scroll_icon{
+    font-size: 1.25rem;
+}
+
+.home_scroll_name{
+    transform: rotate(-90deg);
+    font-size: var(--small-font-size);
+}
