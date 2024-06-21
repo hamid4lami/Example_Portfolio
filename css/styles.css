@@ -209,7 +209,7 @@ img{
 
 /* CHANGE BACKGROUND HEADER  */
 .scroll_header{
-    box-shadow: 0 4px 4px hsla(0%,0%, 4%, .3);
+    box-shadow: 0 4px 4px hsla(0,0%, 4%, .3);
 }
 
 /* HOME SECTION STYLES */
