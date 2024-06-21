@@ -302,3 +302,27 @@ img{
     transform: rotate(-90deg);
     font-size: var(--small-font-size);
 }
+
+/* BUTTONS  */
+.button{
+    display: inline-block;
+    background-color: var(--first-colour);
+    color: var(--body-colour);
+    padding: .75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.button:hover{
+    background-color: var(--first-colour-alt);
+    color: var(--body-colour);
+}
+
+.button_ghost{
+    background-color: transparent;
+    border: 2px solid var(--first-colour);
+    color: var(--first-colour);
+}
+
+/* ABOUT SECTION STYLES  */
