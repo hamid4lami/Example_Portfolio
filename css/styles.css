@@ -432,3 +432,105 @@ img{
 .skill_level{
     font-size: var(--smallest-font-size);
 }
+
+/* SERVICES SECTION STYLE  */
+.services-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.services_card{
+    background-color: var(--container-colour);
+    padding: 3rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.services_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 2.5rem;
+}
+
+.service_button{
+    color: var(--first-colour);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.service_button:hover .service-icon{
+    transform: translateX(.25rem);
+}
+
+.service-icon{
+    font-size: 1rem;
+    transition: .4s;
+}
+
+/* Service model styles */
+.services_model{
+    position: fixed;
+    inset: 0;
+    background-color: hsla(var(--second-hue), 28%, 16%, .7);
+    padding: 2rem 1rem;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    z-index: var(--z-modal);
+}
+
+.services_model_content{
+    position: relative;
+    background-color: var(--body-colour);
+    padding: 4.5rem 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.services_model_title,
+.services_model_description{
+    text-align: center;
+}
+
+.services_model_title{
+    font-size: var(--h3-font-size);
+    color: var(--first-colour);
+    margin-bottom: 1rem;
+}
+
+.services_model_description{
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+
+.services_model_list{
+    display: grid;
+    row-gap: .75rem;
+}
+
+.services_model_item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: .5rem;
+}
+
+.services_model_info{
+    font-size: var(--small-font-size);
+}
+
+.services_model_close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-colour);
+    cursor: pointer;
+}
+
+/* Active model style  */
+.active_model{
+    opacity: 1;
+    visibility: visible;
+}
