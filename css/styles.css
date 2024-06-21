@@ -381,3 +381,54 @@ img{
 .about_description{
     margin-bottom: 2rem;
 }
+
+/* SKILLS STYLE SECTION  */
+.skills_container{
+    row-gap: 3rem;
+    padding-top: 1rem;
+}
+
+.skills_content{
+    background-color: var(--container-colour);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+}
+
+.skills-title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-colour);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills_box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills_group{
+    display: grid;
+    align-content: flex-start;
+}
+
+.skills_data{
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills .bxs-badge-check{
+    font-size: 1rem;
+    color: var(--first-colour);
+}
+
+.skill_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skill_level{
+    font-size: var(--smallest-font-size);
+}
